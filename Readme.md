@@ -1,5 +1,5 @@
 # caddy-docker with dns providers
-`docker pull goer99/caddy-with-ssl`  
+`docker pull goer99/caddy-dns-ssl`  
 ![pull](https://img.shields.io/docker/pulls/sliamb/caddy.svg) ![size](https://img.shields.io/docker/image-size/sliamb/caddy)   
 ![Docker Platforms](https://img.shields.io/badge/platforms-linux%2F386%20%7C%20linux%2Famd64%20%7C%20linux%2Farm%2Fv6%20%7C%20linux%2Farm%2Fv7%20%7C%20linux%2Farm64%2Fv8%20-blue)  
 一个caddy的docker镜像，集成编译`dns providers`插件，Actions自动编译更新。  
