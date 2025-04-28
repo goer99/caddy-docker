@@ -6,7 +6,7 @@ WORKDIR /data/xcaddy/cmd/xcaddy
 RUN go run main.go build latest \
 --with github.com/caddy-dns/cloudflare
 
-RUN /data/xcaddy/cmd/xcaddy/caddy
+RUN /data/xcaddy/cmd/xcaddy/caddy -v
 
 FROM alpine:edge
 COPY --from=builder /data/xcaddy/cmd/xcaddy/caddy /usr/bin/
