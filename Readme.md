@@ -5,26 +5,28 @@
 一个caddy的docker镜像，集成编译`dns providers`插件，Actions自动编译更新。  
 包括以下插件：
 ```
---with github.com/caddy-dns/cloudflare 
---with github.com/caddy-dns/dnspod 
---with github.com/caddy-dns/tencentcloud 
---with github.com/caddy-dns/alidns 
---with github.com/caddy-dns/acmedns 
---with github.com/caddy-dns/godaddy 
---with github.com/caddy-dns/digitalocean 
---with github.com/caddy-dns/duckdns 
---with github.com/caddy-dns/namecheap 
---with github.com/caddy-dns/dynv6 
+--with github.com/caddy-dns/cloudflare \
+--with github.com/caddy-dns/namesilo \
+--with github.com/caddy-dns/dnspod \
+--with github.com/caddy-dns/tencentcloud \
+--with github.com/caddy-dns/alidns \
+--with github.com/caddy-dns/acmedns \
+--with github.com/caddy-dns/godaddy \
+--with github.com/caddy-dns/digitalocean \
+--with github.com/caddy-dns/duckdns \
+--with github.com/caddy-dns/namecheap \
+--with github.com/caddy-dns/westcn \
+--with github.com/caddy-dns/dynv6 \
 --with github.com/caddy-dns/route53
 ```
-有其他需要加的插件可以提。  
+有其他需要加的插件可以自行添加。  
 caddyfile配置文件：`/data/caddyfile.txt`，建议映射/data目录。  
 可用环境变量  
 ```shell
 # 设置时区
 TZ=Asia/Shanghai
 # 设置容器DNS（解析证书API接口）
-DNS=223.5.5.5,8.8.8.8
+DNS=8.8.8.8,223.5.5.5
 ```
 
 # 示例配置
