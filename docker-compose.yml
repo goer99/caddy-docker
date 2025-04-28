@@ -3,8 +3,8 @@ services:
   caddy:
     pull_policy: always
 #    image: public.ecr.aws/sliamb/caddy:latest
-    image: goer99/caddy-with-ssl:latest
-    container_name: caddy-with-ssl
+    image: goer99/caddy-dns-ssl:latest
+    container_name: caddy-dns-ssl
     restart: unless-stopped
     environment:
       - TZ=Asia/Shanghai
